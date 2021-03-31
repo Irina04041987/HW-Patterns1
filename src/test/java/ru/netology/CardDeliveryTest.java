@@ -18,7 +18,7 @@ public class CardDeliveryTest {
 
     @Test
     void shouldSubmitRequestWithDateAsString() {
-        //open("http://localhost:9999");
+        open("http://localhost:9999");
        // $("input[placeholder=\"Город\"").setValue(registrationInfo.getCity());
        // $("input[placeholder=\"Дата встречи\"]").doubleClick().sendKeys(Keys.BACK_SPACE);
        // $("input[placeholder=\"Дата встречи\"]").setValue(DataGenerator.Registration.generateDatePlus3());
