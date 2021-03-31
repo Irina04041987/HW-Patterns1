@@ -29,7 +29,7 @@ public class CardDeliveryTest {
         $("input[placeholder=\"Дата встречи\"]").doubleClick().sendKeys(Keys.BACK_SPACE);
         $("input[placeholder=\"Дата встречи\"]").sendKeys(DataGenerator.Registration.generateDatePlus10());
         $$("span.button__text").find(exactText("Запланировать")).click();
-        $$("span.button__text").find(exactText("Перепланировать")).click();
+        //$$("span.button__text").find(exactText("Перепланировать")).click();
         $("[data-test-id=success-notification]").waitUntil(visible, 15000);
     }
 }
