@@ -23,15 +23,9 @@ public class DataGenerator {
             );
         }
 
-        public static String generateDatePlus3() {
-            LocalDate now = LocalDate.now().plusDays(3);
-            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd MM yyyy");
-            return now.format(formatter);
-        }
-
-        public static String generateDatePlus10() {
-            LocalDate now = LocalDate.now().plusDays(10);
-            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd MM yyyy");
+        public static String generateDatePlus(int day) {
+            LocalDate now = LocalDate.now().plusDays(day);
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
             return now.format(formatter);
         }
     }
